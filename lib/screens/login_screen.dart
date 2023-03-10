@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:serenity/screens/registration_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -118,7 +119,14 @@ class _LoginScreenState extends State<LoginScreen> {
                           children: <Widget>[
                             Text("Don't have an account? "),
                             GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          RegistrationScreen(),
+                                    ));
+                              },
                               child: Text(
                                 "SignUp!",
                                 style: TextStyle(
