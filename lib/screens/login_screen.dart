@@ -29,7 +29,12 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.mail),
+        filled: true,
+        fillColor: Color.fromRGBO(227, 223, 253, 0.4),
+        prefixIcon: Icon(
+          Icons.mail,
+          color: Color.fromRGBO(101, 93, 187, 1),
+        ),
         contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
         hintText: "Email",
         border: OutlineInputBorder(
@@ -48,7 +53,12 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       textInputAction: TextInputAction.done,
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.vpn_key),
+        filled: true,
+        fillColor: Color.fromRGBO(227, 223, 253, 0.4),
+        prefixIcon: Icon(
+          Icons.vpn_key,
+          color: Color.fromRGBO(101, 93, 187, 1),
+        ),
         contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
         hintText: "Password",
         border: OutlineInputBorder(

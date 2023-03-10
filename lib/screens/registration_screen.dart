@@ -29,13 +29,17 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       },
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.account_circle),
-        contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-        hintText: "Name",
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
-        ),
-      ),
+          filled: true,
+          fillColor: Color.fromRGBO(227, 223, 253, 0.4),
+          prefixIcon: Icon(
+            Icons.account_circle,
+            color: Color.fromRGBO(101, 93, 187, 1),
+          ),
+          contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+          hintText: "Name",
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10),
+          )),
     );
 
     final emailField = TextFormField(
@@ -48,7 +52,12 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       },
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.mail),
+        filled: true,
+        fillColor: Color.fromRGBO(227, 223, 253, 0.4),
+        prefixIcon: Icon(
+          Icons.mail,
+          color: Color.fromRGBO(101, 93, 187, 1),
+        ),
         contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
         hintText: "Email",
         border: OutlineInputBorder(
@@ -67,7 +76,12 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       },
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.vpn_key),
+        filled: true,
+        fillColor: Color.fromRGBO(227, 223, 253, 0.4),
+        prefixIcon: Icon(
+          Icons.vpn_key,
+          color: Color.fromRGBO(101, 93, 187, 1),
+        ),
         contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
         hintText: "Password",
         border: OutlineInputBorder(
@@ -86,7 +100,12 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       },
       textInputAction: TextInputAction.done,
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.vpn_key),
+        filled: true,
+        fillColor: Color.fromRGBO(227, 223, 253, 0.4),
+        prefixIcon: Icon(
+          Icons.vpn_key,
+          color: Color.fromRGBO(101, 93, 187, 1),
+        ),
         contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
         hintText: "Confirm Password",
         border: OutlineInputBorder(
@@ -144,7 +163,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         SizedBox(
-                          height: 250,
+                          height: 300,
                           child: Image.asset(
                             "assets/login_page_image.png",
                             fit: BoxFit.contain,
