@@ -24,15 +24,29 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-        SizedBox(
-            width: 200,
+        Padding(
+          padding: EdgeInsets.symmetric(
+              vertical: 16), // add 16 pixels of padding to the top and bottom
+          child: SizedBox(
+            width: 300,
             child: PushableButton(
-              child: Text(
-                'Chat Bot',
-                style: (TextStyle(
-                  color: Color.fromRGBO(101, 93, 187, 1),
-                  fontSize: 20,
-                )),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    'assets/chat_bot.jpeg',
+                    height: 30,
+                    width: 30,
+                  ),
+                  SizedBox(width: 40),
+                  Text(
+                    'Chat Bot',
+                    style: TextStyle(
+                      color: Color.fromRGBO(101, 93, 187, 1),
+                      fontSize: 20,
+                    ),
+                  ),
+                ],
               ),
               height: 70,
               elevation: 5,
@@ -44,7 +58,46 @@ class _HomeScreenState extends State<HomeScreen> {
                 offset: Offset(0, 2),
               ),
               onPressed: () {},
-            ))
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.symmetric(
+              vertical: 16), // add 16 pixels of padding to the top and bottom
+          child: SizedBox(
+            width: 300,
+            child: PushableButton(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    'assets/chat_bot.jpeg',
+                    height: 30,
+                    width: 30,
+                  ),
+                  SizedBox(width: 40),
+                  Text(
+                    'Chat Bot',
+                    style: TextStyle(
+                      color: Color.fromRGBO(101, 93, 187, 1),
+                      fontSize: 20,
+                    ),
+                  ),
+                ],
+              ),
+              height: 70,
+              elevation: 5,
+              hslColor: HSLColor.fromColor(Color.fromRGBO(185, 243, 228, 1)),
+              shadow: BoxShadow(
+                color: Color.fromRGBO(185, 243, 228, 0.5),
+                spreadRadius: 5,
+                blurRadius: 7,
+                offset: Offset(0, 2),
+              ),
+              onPressed: () {},
+            ),
+          ),
+        ),
       ],
     ));
   }
