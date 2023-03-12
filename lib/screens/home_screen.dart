@@ -11,18 +11,16 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-          body: Container(
-        margin: const EdgeInsets.all(24),
-        padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
-        child: Column(
-          children: [
-            _header(context),
-          ],
-        ),
-      )),
-    );
+    return Scaffold(
+        body: Container(
+      margin: const EdgeInsets.all(24),
+      padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+      child: Column(
+        children: [
+          _header(context),
+        ],
+      ),
+    ));
   }
 
   _header(context) {
@@ -38,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: SizedBox(
-            height: 250,
+            height: 200,
             child: Image.asset(
               "assets/home_page_image.png",
               fit: BoxFit.contain,
